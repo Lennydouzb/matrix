@@ -975,9 +975,3 @@ Include it directly in your project:
 #include "Matrix.hpp"
 ```
 
----
-
-# License
-
-This project is provided as-is.
-
