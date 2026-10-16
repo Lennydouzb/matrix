@@ -166,7 +166,8 @@ Matrix<float> matrix(
     {
         1, 2,
         3, 4
-    }
+    },
+    0,0
 );
 ```
 
@@ -192,7 +193,8 @@ Matrix<float> matrix(
     2,
     3,
     EMPTY,
-    {}
+    {},
+    0,0
 );
 ```
 
@@ -244,7 +246,8 @@ Matrix<float> translation(
     3,
     3,
     TRANSLATION,
-    {2, 3}
+    {2, 3},
+    0,0
 );
 ```
 
@@ -360,7 +363,8 @@ Matrix<float> original(
     {
         1, 2,
         3, 4
-    }
+    },
+    0,0
 );
 
 Matrix<float> copy(original);
@@ -389,7 +393,8 @@ Matrix<int> integerMatrix(
     {
         1, 2,
         3, 4
-    }
+    },
+    0,0
 );
 
 Matrix<float> floatMatrix(integerMatrix);
@@ -419,7 +424,8 @@ Matrix<int> a(
     {
         1, 2,
         3, 4
-    }
+    },
+    0,0
 );
 
 Matrix<int> b(
@@ -429,7 +435,8 @@ Matrix<int> b(
     {
         5, 6,
         7, 8
-    }
+    },
+    0,0
 );
 
 a.add(b);
@@ -533,7 +540,8 @@ Matrix<int> a(
     {
         1, 2, 3,
         4, 5, 6
-    }
+    },
+    0,0
 );
 
 Matrix<int> b(
@@ -544,7 +552,8 @@ Matrix<int> b(
         7, 8,
         9, 10,
         11, 12
-    }
+    },
+    0,0
 );
 
 a.multiply(b);
@@ -585,7 +594,8 @@ Matrix<int> matrix(
     {
         1, 2, 3,
         4, 5, 6
-    }
+    },
+    0,0
 );
 
 Matrix<int> transposed = matrix.transpose();
@@ -631,7 +641,8 @@ Matrix<float> matrix(
     {
         1, 2,
         3, 4
-    }
+    },
+    0,0
 );
 
 float result = matrix.det();
@@ -701,7 +712,8 @@ Matrix<float> a(
         1,
         2,
         3
-    }
+    },
+    0,0
 );
 
 Matrix<float> b(
@@ -712,7 +724,8 @@ Matrix<float> b(
         4,
         5,
         6
-    }
+    },
+    0,0
 );
 
 float result = a.dot(b);
@@ -753,7 +766,8 @@ Matrix<float> a(
         1,
         0,
         0
-    }
+    },
+    0,0
 );
 
 Matrix<float> b(
@@ -764,7 +778,8 @@ Matrix<float> b(
         0,
         1,
         0
-    }
+    },
+    0,0
 );
 
 Matrix<float> result = a.cross(b);
@@ -850,7 +865,8 @@ Matrix<int> matrix(
     {
         1, 2,
         3, 4
-    }
+    },
+    0,0
 );
 
 matrix.print();
@@ -924,7 +940,8 @@ int main()
         {
             1, 2,
             3, 4
-        }
+        },
+    0,0
     );
 
     matrix.print();
@@ -974,4 +991,3 @@ Include it directly in your project:
 ```cpp
 #include "Matrix.hpp"
 ```
-
